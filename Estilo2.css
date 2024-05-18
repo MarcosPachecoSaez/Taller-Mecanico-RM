@@ -191,3 +191,7 @@ h1 {
 .popover-body {
   font-size: 0.875rem; /* Tamaño de letra */
 }
+
+.logo {
+  text-align: 50px !important;
+}
