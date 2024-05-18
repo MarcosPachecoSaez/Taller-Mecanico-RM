@@ -184,3 +184,10 @@ h1 {
 .navbar-brand {
   margin-right: 500px; /* Cambia el valor según la cantidad de espacio que desees */
 }
+
+.popover {
+  max-width: 200px; /* Ancho máximo para el popover */
+}
+.popover-body {
+  font-size: 0.875rem; /* Tamaño de letra */
+}

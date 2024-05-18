@@ -249,6 +249,8 @@
         </div>
       </div>
     </div>
+    
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -260,29 +262,24 @@
     <script src="header.js"></script>
     <script src="jQuery.js"></script>
 
+    <div class="container mt-5">
+      
+      <!-- Button trigger popover -->
+      <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="HORARIO" data-bs-content="El horario de mantenciones es de lunes a viernes de 8:30 a 19:00 hrs" data-bs-trigger="focus">
+        Agendar Mantención
+      </button>
+    </div>
     <script>
-      var tooltipTriggerList = [].slice.call(
-        document.querySelectorAll('[data-bs-toggle="mensaje"]')
+
+      var popoverTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="popover"]')
       );
-      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl);
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl);
       });
     </script>
-
     <div id="contenidoFooter"></div>
+   
   </body>
 
-  <div class="container1">
-    <a
-      data-bs-toggle="popover"
-      title="Nosotros"
-      data-bs-trigger="focus"
-      data-bs-content="Somos una empresa experta en Mecanica"
-      class="btn btn-success"
-      href="#"
-      >Curso</a
-    >
-  </div>
-
-  <br />
 </html>
